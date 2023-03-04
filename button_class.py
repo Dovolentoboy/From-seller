@@ -53,6 +53,8 @@ class checked_oplata(disnake.ui.View):
                description='Вашу оплату заметил продавец. +rep \n' 
                                        'Скоро вам напишут , ожидайте ⌛'
            )
+           url = 'https://cdn.discordapp.com/attachments/1059163568915890316/1081322038704214077/pngtree-shop-icon-in-neon-style-png-image_2071229.jpg'
+           embed.set_thumbnail(url=url)
            await interaction.user.send(embed=embed)
            coll.update_one(
             {
@@ -73,6 +75,8 @@ class checked_oplata(disnake.ui.View):
                                     'Вам выносится первое предупреждение . За последующие разы наказание будет строже.\n '
                                     'С любовью создатель сервера '
             )
+            url = 'https://cdn.discordapp.com/attachments/1059163568915890316/1081322038704214077/pngtree-shop-icon-in-neon-style-png-image_2071229.jpg'
+            embed.set_thumbnail(url=url)
             await interaction.user.send(embed=embed)
             coll.update_one(
             {
@@ -183,7 +187,7 @@ class purchases_button(disnake.ui.View):
                 
             else:
                 await interaction.delete_original_message(delay=1)
-                await interaction.send(content='Ждем когда продавец проверит :)',ephemeral=True)
+                await interaction.send(content='Продавец все проверил и вам в личные сообщение пришло уведомление о результате. Советую ознакомиться',ephemeral=True)
    
         else:
             embed = disnake.Embed(
@@ -240,7 +244,7 @@ class purchases_button(disnake.ui.View):
                 
             else:
                 await interaction.delete_original_message(delay=1)
-                await interaction.send(content='Ждем когда продавец проверит :)',ephemeral=True)
+                await interaction.send(content='Продавец все проверил и вам в личные сообщение пришло уведомление о результате. Советую ознакомиться',ephemeral=True)
    
         else:
             embed = disnake.Embed(
@@ -299,7 +303,7 @@ class purchases_button(disnake.ui.View):
                 
             else:
                 await interaction.delete_original_message(delay=1)
-                await interaction.send(content='Ждем когда продавец проверит :)',ephemeral=True)
+                await interaction.send(content='Продавец все проверил и вам в личные сообщение пришло уведомление о результате. Советую ознакомиться',ephemeral=True)
    
         else:
             embed = disnake.Embed(
