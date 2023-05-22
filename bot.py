@@ -7,7 +7,7 @@ from pymongo import MongoClient
 bot = commands.Bot(command_prefix='.',intents=disnake.Intents.all())
 
 
-cluster = MongoClient('mongodb+srv://Dovolentoboy:a600370@cluster0.6wxtw41.mongodb.net/test')
+cluster = MongoClient('MONGODB LINK')
 db = cluster.Vidacha
 coll = db.users
 
