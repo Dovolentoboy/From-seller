@@ -2,7 +2,7 @@ import disnake
 from disnake.ext import commands
 from pymongo import MongoClient
 
-cluster = MongoClient('mongodb+srv://Dovolentoboy:a600370@cluster0.6wxtw41.mongodb.net/test')
+cluster = MongoClient('MONGODB LINK')
 db = cluster.Vidacha
 coll = db.users
 
